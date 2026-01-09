@@ -12,5 +12,6 @@ namespace ProyectoChat.Context
                 }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Noticia> Noticias { get; set; }
     }
 }

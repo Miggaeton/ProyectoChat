@@ -45,4 +45,73 @@ C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Ex
 C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Npgsql.dll
 C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+<<<<<<< HEAD
 C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.sourcelink.json
+=======
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\appsettings.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\ProyectoChat.staticwebassets.endpoints.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\ProyectoChat.exe
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\ProyectoChat.deps.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\ProyectoChat.runtimeconfig.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\ProyectoChat.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\ProyectoChat.pdb
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Npgsql.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.csproj.AssemblyReference.cache
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.AssemblyInfoInputs.cache
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.AssemblyInfo.cs
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.csproj.CoreCompileInputs.cache
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.sourcelink.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\scopedcss\bundle\ProyectoChat.styles.css
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\Proyecto.ECAB5350.Up2Date
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\refint\ProyectoChat.dll
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.pdb
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.genruntimeconfig.cache
+C:\Users\NEMIS PADILLA\Documents\GitHub\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ref\ProyectoChat.dll
+>>>>>>> 6602845bbc5e2c79e6b3488ef6b828431423f33b
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

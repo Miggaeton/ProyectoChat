@@ -7,26 +7,26 @@ namespace ProyectoChat.Controllers
     [Route("[controller]")]
     public class NoticiaController : Controller
     {
-            [HttpPost("create")]
-            public async Task<IActionResult> CrearNoticia([FromBody] LoginBody command)
-            {
+        [HttpPost("create")]
+        public async Task<IActionResult> CrearNoticia([FromBody] LoginBody command)
+        {
 
-                throw new NotImplementedException();
-            }
+            throw new NotImplementedException();
+        }
 
-            [HttpGet("get")]
-            public async Task<IActionResult> ObtenerNoticia([FromQuery] Guid NoticiaID)
-            {
+        [HttpGet("get")]
+        public async Task<IActionResult> ObtenerNoticia([FromQuery] Guid NoticiaID)
+        {
 
-                throw new NotImplementedException();
-            }
+            throw new NotImplementedException();
+        }
 
-            [HttpGet("list")]
-            public async Task<IActionResult> ListarNoticias([FromQuery] int pagina, int tamano)
-            {
+        [HttpGet("list")]
+        public async Task<IActionResult> ListarNoticias([FromQuery] int pagina, int tamano)
+        {
 
-                throw new NotImplementedException();
-            }
+            throw new NotImplementedException();
         }
     }
 }
+    

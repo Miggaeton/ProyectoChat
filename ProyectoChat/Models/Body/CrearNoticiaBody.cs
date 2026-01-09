@@ -1,6 +1,4 @@
 ﻿namespace ProyectoChat.Models.Body
 {
-    public class CrearNoticiaBody
-    {
-    }
+    public record CrearNoticiaBody();
 }
