@@ -45,3 +45,4 @@ C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Microsoft.Ex
 C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Npgsql.dll
 C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\source\repos\ProyectoChat\ProyectoChat\obj\Debug\net8.0\ProyectoChat.sourcelink.json
