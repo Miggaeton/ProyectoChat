@@ -1,8 +1,14 @@
-﻿namespace ProyectoChat.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProyectoChat.Models
 {
     public class Departamento
     {
-        public Guid ID { get; set; }
+        [Key]
+        public Guid Id { get; set; }
         public string Nombre { get; set; }
+        
+        // Relación con ciudades
+        public ICollection<Ciudad> Ciudades { get; set; }
     }
 }
