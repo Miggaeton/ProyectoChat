@@ -41,7 +41,7 @@ namespace ProyectoChat.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Noticia>> PostNoticia([FromForm] NoticiaCreacionDto noticiaDto)
+        public async Task<ActionResult<Noticia>> PostNoticia([FromBody] NoticiaCreacionDto noticiaDto)
         {
             if (!_currentUserService.UserId.HasValue)
             {
@@ -54,7 +54,7 @@ namespace ProyectoChat.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutNoticia(Guid id, [FromForm] NoticiaCreacionDto noticiaDto)
+        public async Task<IActionResult> PutNoticia(Guid id, [FromBody] NoticiaCreacionDto noticiaDto)
         {
             var actualizado = await _noticiasService.ActualizarNoticiaAsync(id, noticiaDto);
 

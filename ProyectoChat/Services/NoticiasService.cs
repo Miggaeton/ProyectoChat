@@ -38,7 +38,7 @@ namespace ProyectoChat.Services
                 ImagenURL = noticiaDto.ImagenURL ?? ""
             };
 
-            await ProcesarImagenAsync(noticia, noticiaDto.ImagenArchivo);
+            //await ProcesarImagenAsync(noticia, noticiaDto.ImagenArchivo);
 
             await _noticiasRepository.AddAsync(noticia);
             return noticia;
@@ -60,7 +60,7 @@ namespace ProyectoChat.Services
                 noticia.ImagenURL = noticiaDto.ImagenURL;
             }
 
-            await ProcesarImagenAsync(noticia, noticiaDto.ImagenArchivo);
+            //await ProcesarImagenAsync(noticia, noticiaDto.ImagenArchivo);
 
             await _noticiasRepository.UpdateAsync(noticia);
             return true;
@@ -78,27 +78,6 @@ namespace ProyectoChat.Services
             return true;
         }
 
-        private async Task ProcesarImagenAsync(Noticia noticia, IFormFile? imagenArchivo)
-        {
-            if (imagenArchivo != null)
-            {
-                string wwwRootPath = _environment.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagenArchivo.FileName);
-                string uploadsFolder = Path.Combine(wwwRootPath, "imagenes", "noticias");
 
-                if (!Directory.Exists(uploadsFolder))
-                {
-                    Directory.CreateDirectory(uploadsFolder);
-                }
-
-                string filePath = Path.Combine(uploadsFolder, fileName);
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imagenArchivo.CopyToAsync(fileStream);
-                }
-
-                noticia.ImagenURL = $"/imagenes/noticias/{fileName}";
-            }
-        }
     }
 }
