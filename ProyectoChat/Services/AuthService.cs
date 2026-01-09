@@ -33,7 +33,7 @@ namespace ProyectoChat.Services
                 new Claim(ClaimTypes.NameIdentifier, usuario.ID.ToString()),
                 new Claim(ClaimTypes.Email, usuario.Email),
                 new Claim(ClaimTypes.Name, usuario.Nombre),
-                new Claim("Rol", usuario.Rol.ToString())
+                new Claim("Rol", usuario.RolId)
             };
 
             var token = new JwtSecurityToken(
