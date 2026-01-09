@@ -324,3 +324,5 @@ secrets.json
 
 # Environment variables
 .env
+/ProyectoChat/bin/Debug/net8.0
+ProyectoChat/bin/Debug/net8.0/ProyectoChat.pdb

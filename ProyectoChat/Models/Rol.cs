@@ -5,7 +5,7 @@ namespace ProyectoChat.Models
     public class Rol
     {
         [Key]
-        public string Id { get; set; } // national, department, etc.
+        public int Id { get; set; } // national, department, etc.
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
     }

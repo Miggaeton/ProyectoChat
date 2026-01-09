@@ -7,7 +7,7 @@
         public string Telefono { get; set; }
         public string Email { get; set; }
         public int Estado { get; set; }
-        public string RolId { get; set; }
+        public int RolId { get; set; }
         public Rol Rol { get; set; }
         public Guid? JefeID { get; set; }
         public Usuario? Jefe { get; set; }

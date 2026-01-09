@@ -12,8 +12,8 @@ using ProyectoChat.Context;
 namespace ProyectoChat.Migrations
 {
     [DbContext(typeof(OrgDbContext))]
-    [Migration("20260109182820_AddDepartamentoCiudad")]
-    partial class AddDepartamentoCiudad
+    [Migration("20260109184712_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -93,8 +93,11 @@ namespace ProyectoChat.Migrations
 
             modelBuilder.Entity("ProyectoChat.Models.Rol", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
@@ -111,31 +114,31 @@ namespace ProyectoChat.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "national",
+                            Id = 1,
                             Descripcion = "Acceso total al sistema",
                             Nombre = "National Director"
                         },
                         new
                         {
-                            Id = "department",
+                            Id = 2,
                             Descripcion = "Administra departamento",
                             Nombre = "Department Director"
                         },
                         new
                         {
-                            Id = "municipal",
+                            Id = 3,
                             Descripcion = "Administra municipio",
                             Nombre = "Municipal Director"
                         },
                         new
                         {
-                            Id = "leader",
+                            Id = 4,
                             Descripcion = "Líder de grupo",
                             Nombre = "Leader"
                         },
                         new
                         {
-                            Id = "user",
+                            Id = 5,
                             Descripcion = "Usuario básico",
                             Nombre = "User"
                         });
@@ -170,9 +173,8 @@ namespace ProyectoChat.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("RolId")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("RolId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
