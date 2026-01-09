@@ -27,11 +27,11 @@ namespace ProyectoChat.Context
                 .HasForeignKey(u => u.RolId);
 
             modelBuilder.Entity<Rol>().HasData(
-                new Rol { Id = 1, Nombre = "Director Nacional", Descripcion = "Acceso total al sistema" },
-                new Rol { Id = 2, Nombre = "Director Departamental", Descripcion = "Administra departamento" },
+                new Rol { Id = 5, Nombre = "Director Nacional", Descripcion = "Acceso total al sistema" },
+                new Rol { Id = 4, Nombre = "Director Departamental", Descripcion = "Administra departamento" },
                 new Rol { Id = 3, Nombre = "Director Municipal", Descripcion = "Administra municipio" },
-                new Rol { Id = 4, Nombre = "Líder", Descripcion = "Líder de grupo" },
-                new Rol { Id = 5, Nombre = "Usuario", Descripcion = "Usuario básico" }
+                new Rol { Id = 2, Nombre = "Líder", Descripcion = "Líder de grupo" },
+                new Rol { Id = 1, Nombre = "Usuario", Descripcion = "Usuario básico" }
             );
 
             modelBuilder.Entity<Departamento>().HasData(

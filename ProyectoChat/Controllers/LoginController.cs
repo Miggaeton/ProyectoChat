@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ProyectoChat.Interfaces;
+using ProyectoChat.Models;
 using ProyectoChat.Models.Dtos;
 
 namespace ProyectoChat.Controllers
@@ -44,7 +45,7 @@ namespace ProyectoChat.Controllers
             }
 
             // Validación de contraseña para todos los roles excepto Rol 5
-            if (usuario.RolId != 5)
+            if (usuario.RolId != 1)
             {
                 if (string.IsNullOrEmpty(loginDto.Password) || string.IsNullOrEmpty(usuario.PasswordHash) || !BCrypt.Net.BCrypt.Verify(loginDto.Password, usuario.PasswordHash))
                 {
@@ -58,7 +59,10 @@ namespace ProyectoChat.Controllers
             { 
                 token, 
                 nombre = usuario.Nombre, 
-                rolId = usuario.RolId 
+                rolId = usuario.RolId ,
+                Departamento = usuario.Departamento?.Nombre,
+                Ciudad = usuario.Ciudad?.Nombre,
+                rolename = usuario.Rol?.Nombre
             });
         }
     }

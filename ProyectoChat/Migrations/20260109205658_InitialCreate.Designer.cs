@@ -12,7 +12,7 @@ using ProyectoChat.Context;
 namespace ProyectoChat.Migrations
 {
     [DbContext(typeof(OrgDbContext))]
-    [Migration("20260109192434_InitialCreate")]
+    [Migration("20260109205658_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -312,33 +312,33 @@ namespace ProyectoChat.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Id = 5,
                             Descripcion = "Acceso total al sistema",
-                            Nombre = "National Director"
+                            Nombre = "Director Nacional"
                         },
                         new
                         {
-                            Id = 2,
+                            Id = 4,
                             Descripcion = "Administra departamento",
-                            Nombre = "Department Director"
+                            Nombre = "Director Departamental"
                         },
                         new
                         {
                             Id = 3,
                             Descripcion = "Administra municipio",
-                            Nombre = "Municipal Director"
+                            Nombre = "Director Municipal"
                         },
                         new
                         {
-                            Id = 4,
+                            Id = 2,
                             Descripcion = "Líder de grupo",
-                            Nombre = "Leader"
+                            Nombre = "Líder"
                         },
                         new
                         {
-                            Id = 5,
+                            Id = 1,
                             Descripcion = "Usuario básico",
-                            Nombre = "User"
+                            Nombre = "Usuario"
                         });
                 });
 

@@ -169,11 +169,11 @@ namespace ProyectoChat.Migrations
                 columns: new[] { "Id", "Descripcion", "Nombre" },
                 values: new object[,]
                 {
-                    { 1, "Acceso total al sistema", "National Director" },
-                    { 2, "Administra departamento", "Department Director" },
-                    { 3, "Administra municipio", "Municipal Director" },
-                    { 4, "Líder de grupo", "Leader" },
-                    { 5, "Usuario básico", "User" }
+                    { 1, "Usuario básico", "Usuario" },
+                    { 2, "Líder de grupo", "Líder" },
+                    { 3, "Administra municipio", "Director Municipal" },
+                    { 4, "Administra departamento", "Director Departamental" },
+                    { 5, "Acceso total al sistema", "Director Nacional" }
                 });
 
             migrationBuilder.InsertData(

@@ -28,7 +28,7 @@ namespace ProyectoChat.Services
 
         public async Task<Usuario> CreateUserAsync(CreateUserDto createUserDto)
         {
-            if (createUserDto.RolId != 5 && string.IsNullOrEmpty(createUserDto.Password))
+            if (createUserDto.RolId != 1 && string.IsNullOrEmpty(createUserDto.Password))
             {
                 throw new ArgumentException("La contraseña es obligatoria para todos los roles excepto el rol 5");
             }
