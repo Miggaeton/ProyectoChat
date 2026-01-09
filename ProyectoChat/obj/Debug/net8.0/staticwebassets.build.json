@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"By5OcriPDqbDrrdE8BwxuEUKFQuh+Mp9oxV8IRGUR2o=","Source":"ProyectoChat","BasePath":"_content/ProyectoChat","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "bmy47K8EV/09jtcIgE5Du3wZYKzMZ2T6DLdsHcFM2+4=",
+  "Source": "ProyectoChat",
+  "BasePath": "_content/ProyectoChat",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
