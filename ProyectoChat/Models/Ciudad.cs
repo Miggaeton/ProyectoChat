@@ -6,10 +6,10 @@ namespace ProyectoChat.Models
     public class Ciudad
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
 
-        public Guid DepartamentoId { get; set; }
+        public int DepartamentoId { get; set; }
         [ForeignKey("DepartamentoId")]
         public Departamento Departamento { get; set; }
     }

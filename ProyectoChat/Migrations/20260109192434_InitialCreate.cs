@@ -18,7 +18,8 @@ namespace ProyectoChat.Migrations
                 name: "Departamentos",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nombre = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
@@ -44,9 +45,10 @@ namespace ProyectoChat.Migrations
                 name: "Ciudades",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nombre = table.Column<string>(type: "text", nullable: false),
-                    DepartamentoId = table.Column<Guid>(type: "uuid", nullable: false)
+                    DepartamentoId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -67,11 +69,12 @@ namespace ProyectoChat.Migrations
                     Nombre = table.Column<string>(type: "text", nullable: false),
                     Telefono = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
+                    PasswordHash = table.Column<string>(type: "text", nullable: true),
                     Estado = table.Column<int>(type: "integer", nullable: false),
                     RolId = table.Column<int>(type: "integer", nullable: false),
                     JefeID = table.Column<Guid>(type: "uuid", nullable: true),
-                    DepartamentoId = table.Column<Guid>(type: "uuid", nullable: true),
-                    CiudadId = table.Column<Guid>(type: "uuid", nullable: true),
+                    DepartamentoId = table.Column<int>(type: "integer", nullable: true),
+                    CiudadId = table.Column<int>(type: "integer", nullable: true),
                     FormExternoID = table.Column<Guid>(type: "uuid", nullable: true)
                 },
                 constraints: table =>
@@ -123,6 +126,45 @@ namespace ProyectoChat.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Departamentos",
+                columns: new[] { "Id", "Nombre" },
+                values: new object[,]
+                {
+                    { 1, "Amazonas" },
+                    { 2, "Antioquia" },
+                    { 3, "Arauca" },
+                    { 4, "Atlántico" },
+                    { 5, "Bolívar" },
+                    { 6, "Boyacá" },
+                    { 7, "Caquetá" },
+                    { 8, "Caldas" },
+                    { 9, "Casanare" },
+                    { 10, "Cauca" },
+                    { 11, "Cesar" },
+                    { 12, "Chocó" },
+                    { 13, "Córdoba" },
+                    { 14, "Norte de Santander" },
+                    { 15, "Cundinamarca" },
+                    { 16, "Guainía" },
+                    { 17, "Guaviare" },
+                    { 18, "Huila" },
+                    { 19, "La Guajira" },
+                    { 20, "Magdalena" },
+                    { 21, "Meta" },
+                    { 22, "Nariño" },
+                    { 23, "Putumayo" },
+                    { 24, "Quindío" },
+                    { 25, "Risaralda" },
+                    { 26, "San Andrés" },
+                    { 27, "Santander" },
+                    { 28, "Sucre" },
+                    { 29, "Tolima" },
+                    { 30, "Valle del Cauca" },
+                    { 31, "Vaupés" },
+                    { 32, "Vichada" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Roles",
                 columns: new[] { "Id", "Descripcion", "Nombre" },
                 values: new object[,]
@@ -132,6 +174,18 @@ namespace ProyectoChat.Migrations
                     { 3, "Administra municipio", "Municipal Director" },
                     { 4, "Líder de grupo", "Leader" },
                     { 5, "Usuario básico", "User" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Ciudades",
+                columns: new[] { "Id", "DepartamentoId", "Nombre" },
+                values: new object[,]
+                {
+                    { 1, 5, "Cartagena" },
+                    { 2, 14, "Cúcuta" },
+                    { 3, 26, "San Andrés, Prov. y Santa Catalina" },
+                    { 4, 11, "Valledupar" },
+                    { 5, 15, "Bogotá" }
                 });
 
             migrationBuilder.CreateIndex(

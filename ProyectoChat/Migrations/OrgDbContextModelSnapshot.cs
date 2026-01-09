@@ -24,12 +24,14 @@ namespace ProyectoChat.Migrations
 
             modelBuilder.Entity("ProyectoChat.Models.Ciudad", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("integer");
 
-                    b.Property<Guid>("DepartamentoId")
-                        .HasColumnType("uuid");
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DepartamentoId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -40,13 +42,47 @@ namespace ProyectoChat.Migrations
                     b.HasIndex("DepartamentoId");
 
                     b.ToTable("Ciudades");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DepartamentoId = 5,
+                            Nombre = "Cartagena"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DepartamentoId = 14,
+                            Nombre = "Cúcuta"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DepartamentoId = 26,
+                            Nombre = "San Andrés, Prov. y Santa Catalina"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DepartamentoId = 11,
+                            Nombre = "Valledupar"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            DepartamentoId = 15,
+                            Nombre = "Bogotá"
+                        });
                 });
 
             modelBuilder.Entity("ProyectoChat.Models.Departamento", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -55,6 +91,168 @@ namespace ProyectoChat.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Departamentos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nombre = "Amazonas"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nombre = "Antioquia"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nombre = "Arauca"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nombre = "Atlántico"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Nombre = "Bolívar"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Nombre = "Boyacá"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Nombre = "Caquetá"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Nombre = "Caldas"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Nombre = "Casanare"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Nombre = "Cauca"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Nombre = "Cesar"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Nombre = "Chocó"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Nombre = "Córdoba"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Nombre = "Norte de Santander"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Nombre = "Cundinamarca"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Nombre = "Guainía"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Nombre = "Guaviare"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Nombre = "Huila"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Nombre = "La Guajira"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Nombre = "Magdalena"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Nombre = "Meta"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Nombre = "Nariño"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Nombre = "Putumayo"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Nombre = "Quindío"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Nombre = "Risaralda"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Nombre = "San Andrés"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Nombre = "Santander"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Nombre = "Sucre"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Nombre = "Tolima"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Nombre = "Valle del Cauca"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Nombre = "Vaupés"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Nombre = "Vichada"
+                        });
                 });
 
             modelBuilder.Entity("ProyectoChat.Models.Noticia", b =>
@@ -147,11 +345,11 @@ namespace ProyectoChat.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("CiudadId")
-                        .HasColumnType("uuid");
+                    b.Property<int?>("CiudadId")
+                        .HasColumnType("integer");
 
-                    b.Property<Guid?>("DepartamentoId")
-                        .HasColumnType("uuid");
+                    b.Property<int?>("DepartamentoId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -168,6 +366,9 @@ namespace ProyectoChat.Migrations
 
                     b.Property<string>("Nombre")
                         .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PasswordHash")
                         .HasColumnType("text");
 
                     b.Property<int>("RolId")

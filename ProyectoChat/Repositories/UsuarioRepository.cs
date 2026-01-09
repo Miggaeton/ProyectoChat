@@ -23,5 +23,12 @@ namespace ProyectoChat.Repositories
         {
             return await _context.Usuarios.FindAsync(id);
         }
+
+        public async Task<Usuario> AddAsync(Usuario usuario)
+        {
+            await _context.Usuarios.AddAsync(usuario);
+            await _context.SaveChangesAsync();
+            return usuario;
+        }
     }
 }

@@ -5,7 +5,7 @@ namespace ProyectoChat.Models
     public class Departamento
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
         
         // Relación con ciudades
